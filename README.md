@@ -3,8 +3,10 @@
 **Disciplina:** Programação de Soluções Computacionais  
 **Professor:** Alexandre de Oliveira (Montanha)  
 **Grupo:**   
-Bernardo de Paula Dias RA: 125111385813. 
+Bernardo de Paula Dias RA: 125111385813.
+
 Pedro Henrique Pedrotti Kendziescki RA: 125111403524. 
+
 Bernardo Pereira Laia Mendes RA: 125111409567. 
 
 ---
