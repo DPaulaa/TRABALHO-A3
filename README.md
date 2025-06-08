@@ -1,91 +1,68 @@
-# 🚗 Trabalho Final A3 – Concessionária de Carros
+# Trabalho Final A3 – Registro de Dados Contratuais
 
 **Disciplina:** Programação de Soluções Computacionais  
 **Professor:** Alexandre de Oliveira (Montanha)  
 **Grupo:**   
-Henrique Romão de Oliveira RA: 124220073     
-Henrique Paulino Dayrell Capanema RA: 125111381313     
+Bernardo de Paula Dias RA: 125111385813
+Pedro Henrique Pedrotti Kendziescki RA: 125111403524
+Bernardo Pereira Laia Mendes RA: 125111409567
+
 
 ---
 
 ## Descrição do Projeto
 
-Este projeto é uma aplicação de console em Java que simula o gerenciamento de uma **concessionária de carros**. Ele permite realizar operações de CRUD (Criar, Listar, Buscar, Editar e Remover registros), com validações e persistência dos dados em arquivo `.txt`.
+O projeto é referente a um controle de dados de um contrato.Ele permite realizar operações de CRUD (Criar, Listar, Buscar, Editar e Remover registros), com validações e persistência dos dados em arquivo `.txt`.
 
 ---
 
 ##  Funcionalidades
 
-Menu principal:  
-
-=== CONCESSIONÁRIA DE CARROS ===
-
-Criar novo registro
-
-Listar todos os registros
-
-Buscar registro (por identificador)
-
-Editar registro
-
-Excluir registro
-
-Sair
-
 A aplicação permite:
-- ✅ Cadastrar um novo carro
-- ✅ Listar todos os carros cadastrados
-- ✅ Buscar um carro pela placa
-- ✅ Editar qualquer campo de um carro
-- ✅ Remover um carro
+- ✅ Cadastrar um novo contrato
+- ✅ Listar todos os contratos cadastrados
+- ✅ Buscar um contrato pelo ID de registro
+- ✅ Editar qualquer campo de um contrato
+- ✅ Remover um contrato
 - ✅ Salvar tudo automaticamente em arquivo
 
----
-
-##  Entidade: Carro
-
-A entidade escolhida representa um **carro disponível na concessionária**.
+ private int id;
+    private String ;
+    private String ;
+    private String ;
+    private String ;
+    private double ;
+    private LocalDate ;
+    private LocalDate ;
+    private LocalDate ;
+    private String ;
 
 ### Atributos:
-- `modelo`: String
-- `marca`: String
-- `ano`: int
-- `cor`: String
-- `placa`: String (identificador único)
+- `contratante`: String
+- `contratado`: String
+- `numeroContrato`: String
+- `descricao`: String
+- `celebracao`: String
+- `inicio`: String
+- `termino`: String
+- `cpf`: String
 - `valor`: double
-
-> Justificativa: A entidade `Carro` representa um objeto de domínio comum em revendas, oficinas e locadoras. Facilita o entendimento da programação orientada a objetos com um exemplo próximo da realidade.
 
 ---
 
 ##  Validações Implementadas
 
-- A **placa** não pode ser vazia
-- O **ano** deve ser maior que zero
-- O sistema lança exceções com mensagens personalizadas (`DadoInvalidoException`)
+- O CPF precisa ser valido, conforme regras de validação.
+- As datas precisam ser coerente em questão de tempo, ou seja, um contrato não pode ter inicio um dia depois da data de vencimento.
 
 ---
 
 ##  Persistência
 
-- Os dados são armazenados no arquivo `carros.txt`
-- O formato utilizado é **CSV simples**
+- Os dados são armazenados no arquivo `contrato.txt`
 - Os dados são carregados na inicialização e salvos automaticamente após qualquer modificação
 
 ---
 
-### Como Executar
 
-### Requisitos
-- Java JDK 8 ou superior
-
-### Compilação e execução
-```bash
-# Compilar os arquivos
-javac src/*.java
-
-# Executar
-java -cp src Main
-```
-
----
+#
